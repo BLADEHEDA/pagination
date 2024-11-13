@@ -1,8 +1,12 @@
 <?php
 namespace App\Http\Livewire;
+
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Item;
+
+#[Layout('layout.app')]
 class Opportunities extends Component
 {
 use WithPagination;

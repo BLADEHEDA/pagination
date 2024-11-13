@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Opportunities;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/opportunities', \App\Http\Livewire\Opportunities::class);
+Route::get('/opportunities',Opportunities::class);
 Route::get('', function () {
     return view('welcome');
 });
